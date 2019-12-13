@@ -1,8 +1,14 @@
 {
   "name": "deep-learning-based-chemical-graphics-analysis-platform-fe",
   "version": "0.0.1",
-  "description": "Deep Learning-based Chemical Graphics Analysis Platform FrontEnd",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "tslint --project . -c tslint.json --fix"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -18,13 +24,8 @@
   },
   "devDependencies": {
     "commitizen": "^4.0.3",
-    "cz-emoji": "^1.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "cz-emoji": "^1.1.2",
+    "tslint": "^5.20.1"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +47,7 @@
     "url": "git+https://github.com/everbrez/Deep-Learning-based-Chemical-Graphics-Analysis-Platform-FE.git"
   },
   "author": "everbrez <everbrez@gmail.com>",
+  "description": "Deep Learning-based Chemical Graphics Analysis Platform FrontEnd",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/everbrez/Deep-Learning-based-Chemical-Graphics-Analysis-Platform-FE/issues"
