@@ -1,4 +1,5 @@
 # Deep-Learning-based-Chemical-Graphics-Analysis-Platform-FE
+![deploy](https://github.com/everbrez/Deep-Learning-based-Chemical-Graphics-Analysis-Platform-FE/workflows/deploy/badge.svg)
 Deep Learning-based Chemical Graphics Analysis Platform FrontEnd
 
 # Git Hook - commitizen
