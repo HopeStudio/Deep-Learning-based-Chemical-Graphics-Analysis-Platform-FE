@@ -9,6 +9,7 @@
   --color-sub: #076CF2;
   --color-sub-dark: #0830FC;
   --color-gradient: linear-gradient(29deg, #381CE9 0%, #6F46EF 100%);
+  --color-bg: var(--color-light);
   --font-famaily: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

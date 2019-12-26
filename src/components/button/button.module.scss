@@ -1,0 +1,27 @@
+.common {
+  color: var(--color-light);
+  background: var(--color-bg);
+  border: none;
+  border-radius: 3px;
+  padding: .5em 1em;
+
+  cursor: pointer;
+}
+
+// size
+.small {
+  min-width: 80px;
+}
+
+.normal {
+  min-width: 100px;
+}
+
+.large {
+  min-width: 185px;
+}
+
+// type
+.gradient {
+  background: var(--color-gradient);
+}
