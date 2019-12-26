@@ -9,6 +9,7 @@ const App: React.FC = () => {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <button>233333333</button>
           <p>
             Deep Learning-based Chemical Graphics Analysis Platform
           </p>
