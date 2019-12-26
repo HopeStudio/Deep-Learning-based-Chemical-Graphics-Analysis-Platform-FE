@@ -3,10 +3,11 @@ import React from 'react'
 import Classes from './button.module.scss'
 
 interface Props {
-  type?: 'gradient' | 'normal'
+  type?: 'gradient' | 'normal' | 'danger'
   nativeType?: 'button' | 'submit' | 'reset' | undefined
   size?: 'large' | 'normal' | 'small'
   className?: string
+  disabled?: boolean
 }
 
 const Button: React.FC<Props> = (props) => {
@@ -16,6 +17,7 @@ const Button: React.FC<Props> = (props) => {
     nativeType,
     size = 'normal',
     className: injectClass,
+    disabled,
     ...others
   } = props
 
@@ -26,7 +28,7 @@ const Button: React.FC<Props> = (props) => {
     injectClass)
 
   return (
-    <button className={className} type={nativeType} {...others}>
+    <button className={className} type={nativeType} {...others} disabled={disabled}>
       {children}
     </button>
   )

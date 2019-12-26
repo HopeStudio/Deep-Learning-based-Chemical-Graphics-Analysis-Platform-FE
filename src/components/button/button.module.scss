@@ -1,15 +1,25 @@
 .common {
-  color: var(--color-light);
+  --button-color-light: var(--color-light);
+  --button-box-shadow: 0 6px 10px 0px;
+  box-sizing: border-box;
+  font-size: var(--size-small);
+  color: var(--color-dark);
   background: var(--color-bg);
   border: none;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   padding: .5em 1em;
 
   cursor: pointer;
+  transition: color, background-color, box-shadow cubic-bezier(0.645, 0.045, 0.355, 1) .2s;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 // size
 .small {
+  font-size: var(--size-exsmall);
   min-width: 80px;
 }
 
@@ -23,5 +33,24 @@
 
 // type
 .gradient {
+  color: var(--color-dark);
   background: var(--color-gradient);
+}
+
+.normal {
+  border: 1px solid var(--color-gray-light);
+  box-shadow: var(--button-box-shadow) var(--color-gray-light);
+}
+
+.danger {
+  color: var(--button-color-light);
+  background: var(--color-danger);
+  box-shadow: var(--button-box-shadow) var(--color-danger);
+}
+
+.common:disabled {
+  color: var(--color-gray);
+  background: var(--color-disabled);
+  box-shadow: none;
+  cursor: not-allowed;
 }

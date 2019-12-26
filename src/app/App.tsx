@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Button type="gradient" size="large">Register</Button>
+          <Button type="normal" size="small">Register</Button>
           <p>
             Deep Learning-based Chemical Graphics Analysis Platform
           </p>

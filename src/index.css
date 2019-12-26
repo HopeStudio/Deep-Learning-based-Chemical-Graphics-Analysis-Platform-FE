@@ -5,6 +5,8 @@
   --color-main: #1904E5;
   --color-danger: #EB514C;
   --color-gray: #868E96;
+  --color-disabled: rgb(230, 230, 230);
+  --color-gray-light: rgb(230, 230, 230);
   --color-dark: #343A40;
   --color-sub: #076CF2;
   --color-sub-dark: #0830FC;
@@ -14,8 +16,20 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
+  --size-h1: 72px;
+  --size-h2: 48px;
+  --size-h3: 36px;
+  --size-h4: 24px;
+  --size-normal: 16px;
+  --size-small: 14px;
+  --size-exsmall: 12px;
+
+  --border-radius: 3.5px;
+
+  --spacing-basic: 10px;
+
   font-family: var(--font-famaily);
-  font-size: 16px;
+  font-size: var(--font-normal);
   color: var(--color-dark);
   background: var(--color-light);
 }
