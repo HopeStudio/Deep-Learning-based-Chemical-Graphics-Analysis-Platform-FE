@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 import logo from '../assets/images/logo.svg'
-import { Button } from '../components'
+import { Header } from '../containers'
 import './app.scss'
 
 const App: React.FC = () => {
@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Button type="normal" size="small">Register</Button>
+          <Header />
           <p>
             Deep Learning-based Chemical Graphics Analysis Platform
           </p>

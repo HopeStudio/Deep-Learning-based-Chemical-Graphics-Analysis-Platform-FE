@@ -1,1 +1,1 @@
-export const a = 233
+export const PLUS_ONE = 'plus one'

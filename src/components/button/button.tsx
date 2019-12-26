@@ -8,6 +8,7 @@ interface Props {
   size?: 'large' | 'normal' | 'small'
   className?: string
   disabled?: boolean
+  [props: string]: any
 }
 
 const Button: React.FC<Props> = (props) => {
@@ -23,8 +24,8 @@ const Button: React.FC<Props> = (props) => {
 
   const className = classnames(
     Classes.common,
-    Classes[type],
-    Classes[size],
+    Classes['type-' + type],
+    Classes['size-' + size],
     injectClass)
 
   return (
