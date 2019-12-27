@@ -2,16 +2,15 @@ import classnames from 'classnames'
 import React from 'react'
 import Classes from './button.module.scss'
 
-interface Props {
+export type ButtonProps = Omit<React.ComponentProps<'button'>, 'type'> & {
   type?: 'gradient' | 'normal' | 'danger'
   nativeType?: 'button' | 'submit' | 'reset' | undefined
-  size?: 'large' | 'normal' | 'small'
-  className?: string
-  disabled?: boolean
-  [props: string]: any
+  size?: 'large' | 'normal' | 'small' | 'full-width'
+  // disabled?: boolean
+  outline?: boolean,
 }
 
-const Button: React.FC<Props> = (props) => {
+const Button: React.FC<ButtonProps> = (props) => {
   const {
     children,
     type = 'normal',
@@ -19,6 +18,7 @@ const Button: React.FC<Props> = (props) => {
     size = 'normal',
     className: injectClass,
     disabled,
+    outline = false,
     ...others
   } = props
 
@@ -26,6 +26,9 @@ const Button: React.FC<Props> = (props) => {
     Classes.common,
     Classes['type-' + type],
     Classes['size-' + size],
+    {
+      [Classes['no-outline']]: !outline,
+    },
     injectClass)
 
   return (

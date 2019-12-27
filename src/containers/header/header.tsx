@@ -1,23 +1,22 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import useActions from '../../actions'
+import { State } from '../../model'
+import * as plusone from '../../actions/plusone'
 import { Button } from '../../components'
-import { connect } from 'react-redux'
-import { plusOne } from '../../redux/actions'
 
-const Header: React.FC<{plus: any, num: any}> = ({ plus, num }) => {
+const Header: React.FC = () => {
+  const plusOne = useActions<typeof plusone>(plusone)
+  const value = useSelector((state: State) => state.plus)
   return (
     <div>
-      <h1>{num}</h1>
-      <Button onClick={plus} type={num > 40 ? 'normal' : 'danger'}>Plus One</Button>
+      <h1>{value}</h1>
+      <Button
+        onClick={plusOne.plus}
+        type={'danger'}
+        size="normal">Register</Button>
     </div>
   )
 }
 
-const mapStateToProps = (state: any) => ({
-  num: state.plusone,
-})
-
-const mapDispatchToProps = {
-  plus: plusOne,
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
+export default Header

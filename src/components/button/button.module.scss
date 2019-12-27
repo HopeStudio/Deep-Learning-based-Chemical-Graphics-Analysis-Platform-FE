@@ -17,6 +17,10 @@
   }
 }
 
+.no-outline {
+  outline: none;
+}
+
 // size
 .size-small {
   font-size: var(--size-exsmall);
@@ -29,6 +33,10 @@
 
 .size-large {
   min-width: 185px;
+}
+
+.size-full-width {
+  width: 100%;
 }
 
 // type
