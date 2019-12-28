@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Input, CheckboxItem, Button, Divider, FormItem } from '../../components'
-import Classes from './loginForm.module.scss'
 
 const LoginForm: React.FC = () => {
   const [checked, setChecked] = useState(false)
@@ -11,17 +11,18 @@ const LoginForm: React.FC = () => {
   return (
     <form>
       <FormItem>
-        <Input placeholder="user name or email" />
+        <Input placeholder="please input user name or email" />
       </FormItem>
 
       <FormItem>
-        <Input placeholder="password" />
+        <Input placeholder="please input password" />
       </FormItem>
 
       <FormItem>
         <CheckboxItem checked={checked} onChange={handleChange}>
           Remember Password
       </CheckboxItem>
+      <Link to="/forgotpassword" className="hover">forgot password?</Link>
       </FormItem>
 
       <FormItem>
@@ -30,7 +31,7 @@ const LoginForm: React.FC = () => {
       </Button>
       </FormItem>
 
-      <Divider className={Classes.divider}>
+      <Divider space>
         OR
       </Divider>
 

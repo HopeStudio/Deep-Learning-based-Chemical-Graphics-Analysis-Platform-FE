@@ -68,10 +68,14 @@ a:hover,
 a:visited,
 a:active {
   color: currentColor;
+}
+
+a {
   text-decoration: none;
 }
 
-a:not(.no-hover):hover {
+a:not(.no-hover):hover,
+.hover{
   background: var(--color-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
