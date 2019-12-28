@@ -30,6 +30,7 @@
   --spacing: 1rem;
 
   --main-content: 1280px;
+  --form-width: 360px
 
   font-family: var(--font-famaily);
   font-size: var(--font-normal);
