@@ -5,7 +5,7 @@ import Classes from './login.module.scss'
 
 const Login: React.FC = () => {
   return (
-    <>
+    <div className={Classes['login-page']}>
       <Title
         sub="enjoy the power of technology"
       >
@@ -14,7 +14,7 @@ const Login: React.FC = () => {
       <div className={Classes.container}>
         <LoginForm />
       </div>
-    </>
+    </div>
   )
 }
 

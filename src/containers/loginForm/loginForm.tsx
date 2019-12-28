@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Input, CheckboxItem, Button, Divider } from '../../components'
+import { Input, CheckboxItem, Button, Divider, FormItem } from '../../components'
+import Classes from './loginForm.module.scss'
 
 const LoginForm: React.FC = () => {
   const [checked, setChecked] = useState(false)
@@ -9,20 +10,36 @@ const LoginForm: React.FC = () => {
   }
   return (
     <form>
-      <Input />
-      <CheckboxItem checked={checked} onChange={handleChange}>
-        Remember Password
-      </CheckboxItem>
-      <Button type="gradient" size="auto">
-        Login
-      </Button>
+      <FormItem>
+        <Input placeholder="user name or email" />
+      </FormItem>
+      <FormItem>
+        <Input placeholder="password" />
+      </FormItem>
 
-      <Divider>
+      <FormItem>
+        <CheckboxItem checked={checked} onChange={handleChange}>
+          Remember Password
+      </CheckboxItem>
+      </FormItem>
+
+      <FormItem>
+        <Button type="gradient" size="auto">
+          Login
+      </Button>
+      </FormItem>
+
+      <Divider className={Classes.divider}>
         OR
       </Divider>
 
-      <Button type="normal" size="auto">Login with Github</Button>
-      <Button type="normal" size="auto">Login with QQ</Button>
+      <FormItem>
+        <Button type="normal" size="auto">Login with WeChat</Button>
+      </FormItem>
+      <FormItem>
+        <Button type="normal" size="auto">Login with QQ</Button>
+      </FormItem>
+
     </form>
 
   )
