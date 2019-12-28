@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="checkbox" transform="translate(-1.000000, -6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="checked" transform="translate(-1.000000, 1.000000)">
+                <g id="Group" transform="translate(2.100000, 5.250000)">
+                    <path d="M13.6228562,0.359638396 L5.3843947,8.51144205 L2.12714376,5.28845314 C1.64252837,4.80893528 0.848076923,4.80893528 0.363461538,5.28845314 C-0.121153846,5.767971 -0.121153846,6.55406586 0.363461538,7.03358372 L4.26421816,10.8933095 C4.52638714,11.1527208 4.99511349,11.270635 5.3843947,11.2470521 C5.77367591,11.262774 6.24240227,11.1448598 6.49662673,10.8933095 L15.3865385,2.10476898 C15.8711538,1.62525111 15.8711538,0.839156258 15.3865385,0.359638396 C14.9019231,-0.119879465 14.1154161,-0.119879465 13.6228562,0.359638396 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
