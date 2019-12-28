@@ -11,10 +11,12 @@
 
 
   cursor: pointer;
-  transition: color, background-color, box-shadow cubic-bezier(0.645, 0.045, 0.355, 1) .2s;
+  transition: color cubic-bezier(0.645, 0.045, 0.355, 1) .2s,
+    background-color cubic-bezier(0.645, 0.045, 0.355, 1) .2s,
+    box-shadow cubic-bezier(0.645, 0.045, 0.355, 1) .2s;
 
   &:hover {
-  -webkit-text-fill-color: none;
+    -webkit-text-fill-color: none;
     box-shadow: none;
   }
 }
