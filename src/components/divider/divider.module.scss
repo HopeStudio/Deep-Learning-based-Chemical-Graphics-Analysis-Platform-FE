@@ -2,16 +2,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
+.normal {
   &::before,
   &::after {
     content: '';
     flex: 1 1 auto;
     height: 1px;
-    background: linear-gradient(to left, var(--color-border), var(--color-border) 60%,var(--color-bg) 60%, var(--color-bg) 100%);
+    background: linear-gradient(to left, var(--color-border), var(--color-border) 60%, var(--color-bg) 60%, var(--color-bg) 100%);
     background-size: .8rem;
     background-repeat: repeat-x;
   }
+}
+
+.line {
+  height: 1px;
+  background: var(--color-border);
+}
+
+.dashed {
+  border-top: 1px dashed var(--color-border);
 }
 
 .text {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Login } from '../pages'
-import { Header } from '../containers'
+import { Header, Footer } from '../containers'
 import './app.scss'
 
 const App: React.FC = () => {
@@ -11,6 +11,7 @@ const App: React.FC = () => {
       <Route path="/login">
         <Login />
       </Route>
+      <Footer />
     </Router>
   )
 }

@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import Classes from './title.module.scss'
 
 export type TitleProps = React.ComponentPropsWithRef<'div'> & {
-  sub?: string,
+  sub?: string | React.ReactElement,
 }
 
 const Title: React.FC<TitleProps> = props => {

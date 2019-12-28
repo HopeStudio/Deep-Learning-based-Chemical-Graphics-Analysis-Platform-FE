@@ -29,6 +29,8 @@
 
   --spacing: 1rem;
 
+  --main-content: 1280px;
+
   font-family: var(--font-famaily);
   font-size: var(--font-normal);
   color: var(--color-dark);
