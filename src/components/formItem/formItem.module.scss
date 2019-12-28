@@ -4,10 +4,27 @@
   }
 }
 
-.item {
-
+.top {
+  & + & {
+    margin-top: .5rem;
+  }
 }
 
 .label {
+  font-size: var(--size-normal);
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
 
+.left {
+  .label,
+  .item {
+    display: inline-block;
+  }
+
+  .label {
+    width: 30%;
+    text-align: right;
+    padding: 0 .5rem 0;
+  }
 }

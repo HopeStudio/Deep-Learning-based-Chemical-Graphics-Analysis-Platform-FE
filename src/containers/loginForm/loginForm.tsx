@@ -13,6 +13,7 @@ const LoginForm: React.FC = () => {
       <FormItem>
         <Input placeholder="user name or email" />
       </FormItem>
+
       <FormItem>
         <Input placeholder="password" />
       </FormItem>
@@ -36,6 +37,7 @@ const LoginForm: React.FC = () => {
       <FormItem>
         <Button type="normal" size="auto">Login with WeChat</Button>
       </FormItem>
+
       <FormItem>
         <Button type="normal" size="auto">Login with QQ</Button>
       </FormItem>
