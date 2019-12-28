@@ -10,7 +10,9 @@ const LoginForm: React.FC = () => {
   return (
     <form>
       <Input />
-      <CheckboxItem checked={checked} onChange={handleChange}/>
+      <CheckboxItem checked={checked} onChange={handleChange}>
+        Remember Password
+      </CheckboxItem>
     </form>
   )
 }
