@@ -1,6 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
-import logo from '../assets/images/logo.svg'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { Header } from '../containers'
 import './app.scss'
 
@@ -8,18 +7,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Header />
-          <p>
-            Deep Learning-based Chemical Graphics Analysis Platform
-          </p>
-          <Link to="/user">to UserPage</Link>
-          <Route path="/user">
-            UserPage.....
-        </Route>
-          <Link to="/">HomePage</Link>
-        </header>
+        <Header />
       </div>
     </Router>
   )

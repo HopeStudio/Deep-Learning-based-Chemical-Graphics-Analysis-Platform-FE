@@ -26,7 +26,7 @@
 
   --border-radius: 3.5px;
 
-  --spacing-basic: 10px;
+  --spacing: 1rem;
 
   font-family: var(--font-famaily);
   font-size: var(--font-normal);
@@ -38,4 +38,40 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: var(--size-h1);
+}
+
+h2 {
+  font-size: var(--size-h2);
+}
+
+h3 {
+  font-size: var(--size-h3);
+}
+
+h4 {
+  font-size: var(--size-h4);
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:not(.no-hover):hover {
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: var(--color-gray-light);
 }
