@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1 1 auto;
+    height: 1px;
+    background: linear-gradient(to left, var(--color-border), var(--color-border) 60%,var(--color-bg) 60%, var(--color-bg) 100%);
+    background-size: .8rem;
+    background-repeat: repeat-x;
+  }
+}
+
+.text {
+  flex: 0 0 auto;
+  color: black;
+  font-size: var(--size-h4);
+
+  padding: 0 .2rem;
+}
