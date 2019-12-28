@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Input, CheckboxItem } from '../../components'
+import { Input, CheckboxItem, Button } from '../../components'
 
 const LoginForm: React.FC = () => {
   const [checked, setChecked] = useState(false)
@@ -13,6 +13,9 @@ const LoginForm: React.FC = () => {
       <CheckboxItem checked={checked} onChange={handleChange}>
         Remember Password
       </CheckboxItem>
+      <Button type="gradient" size="auto">
+        Login
+      </Button>
     </form>
   )
 }

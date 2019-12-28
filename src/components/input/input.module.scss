@@ -1,5 +1,5 @@
 .input {
-  width: 100%;
+  box-sizing: border-box;
   height: 1.75rem;
 
   font-size: var(--size-small);
@@ -22,5 +22,13 @@
 
   &:focus {
     box-shadow: var(--color-sub) 0 0 10px -4px;
+  }
+
+  &.auto {
+    width: 100%;
+  }
+
+  &.normal {
+    width: 220px;
   }
 }
