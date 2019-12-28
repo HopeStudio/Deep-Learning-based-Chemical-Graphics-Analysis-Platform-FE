@@ -24,6 +24,7 @@ const LoginForm: React.FC = () => {
       <Button type="normal" size="auto">Login with Github</Button>
       <Button type="normal" size="auto">Login with QQ</Button>
     </form>
+
   )
 }
 
