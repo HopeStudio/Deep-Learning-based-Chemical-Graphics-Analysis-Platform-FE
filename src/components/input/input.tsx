@@ -2,11 +2,11 @@ import React from 'react'
 import classnames from 'classnames'
 import Classes from './input.module.scss'
 
-export type InputProps = Omit<React.ComponentPropsWithRef<'input'>, 'type'> & {
+export type InputProps = Omit<React.ComponentPropsWithRef<'input'>, 'type' | 'size'> & {
   width?: number,
   height?: number,
   type?: 'text' | 'password',
-  size?: 'normal' | 'auto',
+  size?: 'normal' | 'auto' | 'large',
 }
 
 const Input: React.FC<InputProps> = props => {

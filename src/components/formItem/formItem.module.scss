@@ -10,6 +10,18 @@
   }
 }
 
+.with-label {
+  .container + & {
+    margin-top: 1rem;
+  }
+}
+
+.space-large {
+  .container + & {
+    margin-top: 2rem;
+  }
+}
+
 .item {
   display: flex;
   flex-flow: row nowrap;
@@ -34,7 +46,6 @@
 }
 
 .left {
-
   .label,
   .item {
     display: inline-block;

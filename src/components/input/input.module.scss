@@ -20,6 +20,11 @@
     border-color: var(--color-sub);
   }
 
+  &[disabled] {
+    border-color: var(--color-border);
+    cursor: not-allowed;
+  }
+
   &:focus {
     box-shadow: var(--color-sub) 0 0 10px -4px;
   }
@@ -30,5 +35,11 @@
 
   &.normal {
     width: 220px;
+    height: 2rem;
+  }
+
+  &.large {
+    width: 320px;
+    height: 2.2rem;
   }
 }

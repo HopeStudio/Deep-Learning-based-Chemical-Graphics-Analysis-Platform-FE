@@ -1,0 +1,31 @@
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-normal);
+  color: var(--color-light);
+  background: rgba(0, 0, 0, .6);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity cubic-bezier(0.645, 0.045, 0.355, 1) .35s;
+}
+
+.upload {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 1rem;
+
+  &:hover {
+    .mask {
+      opacity: 1;
+    }
+  }
+}
