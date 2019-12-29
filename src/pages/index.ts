@@ -6,6 +6,8 @@ import Search from './search/search'
 import Profile from './profile/profile'
 import Setting from './setting/setting'
 import History from './history/history'
+import HomePage from './homepage/homepage'
+import Product from './product/product'
 
 export {
   Login,
@@ -16,4 +18,6 @@ export {
   Profile,
   Setting,
   History,
+  HomePage,
+  Product,
 }

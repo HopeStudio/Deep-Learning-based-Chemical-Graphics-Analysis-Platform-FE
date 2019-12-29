@@ -24,7 +24,7 @@ const Header: React.FC = () => {
 
           <nav className={Classes.nav}>
             <Link to="/products">Products</Link>
-            <Link to="/contact">Contact</Link>
+            <a href="javascript:;">Contact</a>
           </nav>
         </div>
 
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             </Button>
           </Link> */}
           <DropDown dropDown={<UserMenu />}>
-            <Link to="/user" className={Classes.avatar}>
+            <Link to="/profile" className={Classes.avatar}>
               <Avatar />
             </Link>
           </DropDown>

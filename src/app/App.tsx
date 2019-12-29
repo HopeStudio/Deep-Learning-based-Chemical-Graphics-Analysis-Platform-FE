@@ -9,6 +9,8 @@ import {
   Profile,
   Setting,
   History,
+  HomePage,
+  Product,
 } from '../pages'
 import { Header, Footer } from '../containers'
 import './app.scss'
@@ -17,34 +19,42 @@ const App: React.FC = () => {
   return (
     <Router>
       <Header />
-      <Route path="/login">
+      <Route path="/" exact>
+        <HomePage />
+      </Route>
+
+      <Route path="/products" exact>
+        <Product />
+      </Route>
+
+      <Route path="/login" exact>
         <Login />
       </Route>
-      <Route path="/register">
+      <Route path="/register" exact>
         <Register />
       </Route>
 
-      <Route path="/associate-account">
+      <Route path="/associate-account" exact>
         <AssociateAccount />
       </Route>
 
-      <Route path="/verify">
+      <Route path="/verify" exact>
         <Verify />
       </Route>
 
-      <Route path="/search">
+      <Route path="/search" exact>
         <Search />
       </Route>
 
-      <Route path="/profile">
+      <Route path="/profile" exact>
         <Profile />
       </Route>
 
-      <Route path="/setting">
+      <Route path="/setting" exact>
         <Setting />
       </Route>
 
-      <Route path="/history">
+      <Route path="/history" exact>
         <History />
       </Route>
       <Footer />
