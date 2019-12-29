@@ -1,21 +1,11 @@
 import React from 'react'
-import { Title } from '../../components'
-import { AssociateAccountForm } from '../../containers'
-import Classes from './associateAccount.module.scss'
+import { AssociateAccountForm, Form } from '../../containers'
 
 const AssociateAccount: React.FC = props => {
-
   return (
-    <div className={Classes.page}>
-      <Title
-        sub="enjoy the power of technology"
-      >
-        Associate Your Account
-      </Title>
-      <div className={Classes.container}>
-        <AssociateAccountForm />
-      </div>
-    </div>
+    <Form title="Associate Your Account" sub="enjoy the power of technology">
+      <AssociateAccountForm />
+    </Form>
   )
 }
 

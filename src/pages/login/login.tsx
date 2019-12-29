@@ -1,20 +1,11 @@
 import React from 'react'
-import { Title } from '../../components'
-import { LoginForm } from '../../containers'
-import Classes from './login.module.scss'
+import { LoginForm, Form } from '../../containers'
 
 const Login: React.FC = () => {
   return (
-    <div className={Classes['login-page']}>
-      <Title
-        sub="enjoy the power of technology"
-      >
-        Welcome Back!
-      </Title>
-      <div className={Classes.container}>
-        <LoginForm />
-      </div>
-    </div>
+    <Form title="Welcome Back!" sub="enjoy the power of technology">
+      <LoginForm />
+    </Form>
   )
 }
 
