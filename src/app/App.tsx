@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Login } from '../pages'
+import { Login, Register } from '../pages'
 import { Header, Footer } from '../containers'
 import './app.scss'
 
@@ -10,6 +10,9 @@ const App: React.FC = () => {
       <Header />
       <Route path="/login">
         <Login />
+      </Route>
+      <Route path="/register">
+        <Register />
       </Route>
       <Footer />
     </Router>

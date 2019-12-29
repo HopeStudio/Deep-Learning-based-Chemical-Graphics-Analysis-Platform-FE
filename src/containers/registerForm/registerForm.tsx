@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Input, CheckboxItem, Button, Divider, FormItem } from '../../components'
+import Classes from './registerForm.module.scss'
 
-const LoginForm: React.FC = () => {
+const RegisterForm: React.FC = () => {
   const [checked, setChecked] = useState(false)
 
   function handleChange() {
     setChecked(!checked)
   }
+
   return (
     <form>
       <FormItem>
-        <Input placeholder="please input user name or email" />
+        <Input placeholder="please input user name" />
       </FormItem>
 
       <FormItem>
@@ -19,15 +21,23 @@ const LoginForm: React.FC = () => {
       </FormItem>
 
       <FormItem>
+        <Input placeholder="please input email address" />
+      </FormItem>
+
+      <FormItem>
+        <Input placeholder="verification code" className={Classes['verification-code']} />
+        <Button>Get Code</Button>
+      </FormItem>
+
+      <FormItem>
         <CheckboxItem checked={checked} onChange={handleChange}>
-          Remember Password
+          I agree the user proxy
       </CheckboxItem>
-        <Link to="/forgotpassword" className="hover">forgot password?</Link>
       </FormItem>
 
       <FormItem>
         <Button type="gradient" size="auto">
-          Login
+          Register
       </Button>
       </FormItem>
 
@@ -44,7 +54,7 @@ const LoginForm: React.FC = () => {
       </FormItem>
 
       <FormItem align="end">
-        dont't have an account? click here to&nbsp;<Link to="register" className="hover">register</Link>
+        already has account? click here to&nbsp;<Link to="login" className="hover">login</Link>
       </FormItem>
 
     </form>
@@ -52,4 +62,4 @@ const LoginForm: React.FC = () => {
   )
 }
 
-export default LoginForm
+export default RegisterForm

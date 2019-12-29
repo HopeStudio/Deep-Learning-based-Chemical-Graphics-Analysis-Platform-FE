@@ -5,12 +5,13 @@ import Classes from './formItem.module.scss'
 export type FormItemProps = React.ComponentPropsWithRef<'div'> & {
   label?: string | React.ReactElement,
   position?: 'top' | 'left',
+  align?: 'space-between' | 'start' | 'end',
 }
 
 const FormItem: React.FC<FormItemProps> = props => {
-  const { label, children, position = 'top', className: injectClassName, ...rest } = props
+  const { label, children, position = 'top', className: injectClassName, align = 'space-between', ...rest } = props
 
-  const className = classnames(Classes.container, Classes[position], injectClassName)
+  const className = classnames(Classes.container, Classes[position], Classes[align], injectClassName)
 
   return (
     <div className={className} {...rest}>

@@ -9,7 +9,7 @@ const Login: React.FC = () => {
       <Title
         sub="enjoy the power of technology"
       >
-        Welcome to CGAP!
+        Welcome Back!
       </Title>
       <div className={Classes.container}>
         <LoginForm />

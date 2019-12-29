@@ -1,11 +1,11 @@
 .container {
-  & + & {
+  &+& {
     margin-top: 1rem;
   }
 }
 
 .top {
-  & + & {
+  &+& {
     margin-top: .5rem;
   }
 }
@@ -13,7 +13,18 @@
 .item {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+
+  .space-between & {
+    justify-content: space-between;
+  }
+
+  .start & {
+    justify-content: flex-start;
+  }
+
+  .end & {
+    justify-content: flex-end;
+  }
 }
 
 .label {
@@ -23,6 +34,7 @@
 }
 
 .left {
+
   .label,
   .item {
     display: inline-block;
