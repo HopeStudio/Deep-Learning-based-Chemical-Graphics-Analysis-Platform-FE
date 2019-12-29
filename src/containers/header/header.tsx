@@ -5,7 +5,7 @@ import classnames from 'classnames'
 import useActions from '../../actions'
 import { State } from '../../model'
 import * as plusone from '../../actions/plusone'
-import { Button, Logo } from '../../components'
+import { Button, Logo, Avatar } from '../../components'
 import { Container } from '../../containers'
 import Classes from './header.module.scss'
 import { ReactComponent as SearchIcon } from '../../assets/images/search-icon.svg'
@@ -32,13 +32,16 @@ const Header: React.FC = () => {
           <Link to="/search" title="search" className={Classes.search}>
             <SearchIcon className={Classes['search-icon']} />
           </Link>
-          <Link to="/login" className={Classes.login}>Login</Link>
+          {/* <Link to="/login" className={Classes.login}>Login</Link>
           <Link to="/register" className="no-hover">
             <Button
               type="gradient"
               size="normal">
               Register
-        </Button>
+            </Button>
+          </Link> */}
+          <Link to="/user" className={Classes.avatar}>
+            <Avatar />
           </Link>
         </div>
 

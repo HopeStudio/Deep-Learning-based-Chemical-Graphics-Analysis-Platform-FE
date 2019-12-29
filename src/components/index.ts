@@ -5,6 +5,7 @@ import CheckboxItem from './checkboxItem/checkboxItem'
 import Divider from './divider/divider'
 import Title from './title/title'
 import FormItem from './formItem/formItem'
+import Avatar from './avatar/avatar'
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   Divider,
   Title,
   FormItem,
+  Avatar,
 }

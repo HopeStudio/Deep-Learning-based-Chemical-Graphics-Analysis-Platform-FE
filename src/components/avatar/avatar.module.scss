@@ -1,0 +1,22 @@
+.container {
+
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.large {
+  width: 180px;
+  height: 180px;
+}
+
+.small {
+  width: 1.8rem;
+  height: 1.8rem;
+}
