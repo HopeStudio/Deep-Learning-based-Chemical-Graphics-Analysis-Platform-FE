@@ -6,6 +6,7 @@ import Divider from './divider/divider'
 import Title from './title/title'
 import FormItem from './formItem/formItem'
 import Avatar from './avatar/avatar'
+import DropDown from './dropDown/dropDown'
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   Title,
   FormItem,
   Avatar,
+  DropDown,
 }

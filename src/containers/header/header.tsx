@@ -5,8 +5,8 @@ import classnames from 'classnames'
 import useActions from '../../actions'
 import { State } from '../../model'
 import * as plusone from '../../actions/plusone'
-import { Button, Logo, Avatar } from '../../components'
-import { Container } from '../../containers'
+import { Button, Logo, Avatar, DropDown } from '../../components'
+import { Container, UserMenu } from '../../containers'
 import Classes from './header.module.scss'
 import { ReactComponent as SearchIcon } from '../../assets/images/search-icon.svg'
 
@@ -40,9 +40,11 @@ const Header: React.FC = () => {
               Register
             </Button>
           </Link> */}
-          <Link to="/user" className={Classes.avatar}>
-            <Avatar />
-          </Link>
+          <DropDown dropDown={<UserMenu />}>
+            <Link to="/user" className={Classes.avatar}>
+              <Avatar />
+            </Link>
+          </DropDown>
         </div>
 
       </header>
