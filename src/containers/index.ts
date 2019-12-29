@@ -5,6 +5,7 @@ import RegisterForm from './registerForm/registerForm'
 import AssociateAccountForm from './associateAccountForm/associateAccountForm'
 import VerifyForm from './verifyForm/verifyForm'
 import Form from './form/form'
+import Container from './container/container'
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   AssociateAccountForm,
   VerifyForm,
   Form,
+  Container,
 }

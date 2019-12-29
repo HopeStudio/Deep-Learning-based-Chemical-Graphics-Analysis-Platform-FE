@@ -1,0 +1,11 @@
+.container {
+  margin: auto;
+}
+
+.flex {
+  margin:0 calc(2 * var(--spacing));
+}
+
+.main {
+  width: var(--main-content);
+}

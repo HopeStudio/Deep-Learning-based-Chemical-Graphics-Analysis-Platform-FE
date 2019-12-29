@@ -2,6 +2,7 @@ import React from 'react'
 import classnames from 'classnames'
 import { Link } from 'react-router-dom'
 import { Logo, Divider } from '../../components'
+import { Container } from '../../containers'
 import Classes from './footer.module.scss'
 
 export type FooterProps = React.ComponentPropsWithRef<'div'>
@@ -12,7 +13,7 @@ const Footer: React.FC<FooterProps> = props => {
   const className = classnames(Classes.wrapper, injectClassName)
 
   return (
-    <div className={className} {...rest}>
+    <Container className={className} {...rest}>
       <footer className={Classes.footer}>
         <section className={Classes['logo-wrapper']}>
           <Logo className={Classes.logo} />
@@ -40,7 +41,7 @@ const Footer: React.FC<FooterProps> = props => {
       </footer>
       <Divider type="line" />
       <span className={Classes.copyright}>@copyright 2019</span>
-    </div>
+    </Container>
   )
 }
 
