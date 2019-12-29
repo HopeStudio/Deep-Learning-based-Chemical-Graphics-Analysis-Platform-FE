@@ -12,7 +12,7 @@ import { ReactComponent as SearchIcon } from '../../assets/images/search-icon.sv
 
 const Header: React.FC = () => {
   return (
-    <Container>
+    <Container type="flex">
       <header className={Classes.container}>
         <div className={Classes['left-container']}>
           <Link to="/">

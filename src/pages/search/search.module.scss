@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.input {
+  margin-right: 3rem;
+}
+
+.form {
+  width: 75%;
+  margin: 2rem auto 0;
+}
+
+.title {
+  margin-left: calc(-185px - 3rem);
+}

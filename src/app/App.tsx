@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Login, Register, AssociateAccount, Verify } from '../pages'
+import { Login, Register, AssociateAccount, Verify, Search } from '../pages'
 import { Header, Footer } from '../containers'
 import './app.scss'
 
@@ -21,6 +21,10 @@ const App: React.FC = () => {
 
       <Route path="/verify">
         <Verify />
+      </Route>
+
+      <Route path="/search">
+        <Search />
       </Route>
       <Footer />
     </Router>
