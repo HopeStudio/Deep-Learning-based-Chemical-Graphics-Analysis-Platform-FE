@@ -5,7 +5,7 @@ import Classes from './button.module.scss'
 export type ButtonProps = Omit<React.ComponentProps<'button'>, 'type'> & {
   type?: 'gradient' | 'normal' | 'danger'
   nativeType?: 'button' | 'submit' | 'reset' | undefined
-  size?: 'large' | 'normal' | 'small' | 'auto'
+  size?: 'large' | 'normal' | 'small' | 'auto' | 'medium'
   // disabled?: boolean
   outline?: boolean,
 }
