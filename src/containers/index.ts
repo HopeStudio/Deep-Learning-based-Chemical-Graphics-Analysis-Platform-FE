@@ -7,6 +7,7 @@ import VerifyForm from './verifyForm/verifyForm'
 import Form from './form/form'
 import Container from './container/container'
 import UserMenu from './userMenu/userMenu'
+import UserPage from './userPage/userPage'
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   Form,
   Container,
   UserMenu,
+  UserPage,
 }
