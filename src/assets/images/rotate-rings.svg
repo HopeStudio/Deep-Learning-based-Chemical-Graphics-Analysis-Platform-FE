@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="397px" height="397px" viewBox="0 0 397 397" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>rotate rings</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="198.5" cy="198.5" r="125.5"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="251" height="251" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="198.5" cy="198.5" r="198.5"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="397" height="397" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rotate-rings">
+            <g>
+                <use id="inner-ring" stroke-opacity="0.160948427" stroke="#868E96" mask="url(#mask-2)" stroke-width="10" stroke-dasharray="25" xlink:href="#path-1"></use>
+                <use id="outer-ring" stroke-opacity="0.160948427" stroke="#868E96" mask="url(#mask-4)" stroke-width="10" stroke-dasharray="25" xlink:href="#path-3"></use>
+                <circle id="outer-dot" stroke-opacity="0.453288899" stroke="#1904E5" stroke-width="3" cx="26" cy="107" r="8.5"></circle>
+                <circle id="inner-dot" stroke-opacity="0.498579545" stroke="#076CF2" stroke-width="3" cx="150" cy="311" r="8.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

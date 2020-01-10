@@ -1,0 +1,97 @@
+.container {
+  position: relative;
+}
+
+.main-section,
+.deep-learning-section {
+  position: relative;
+}
+
+.main-section {
+  padding: 150px 0 250px;
+}
+
+.description {
+  font-size: var(--size-h4);
+  color: var(--color-gray);
+}
+
+.ir-data {
+  position: absolute;
+  right: 0;
+  // top: -130px;
+  top: 0;
+  z-index: -1;
+}
+
+.triangle-top {
+  position: absolute;
+  right: 40%;
+  top: 20%;
+  animation: rotate infinite 10s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.description-2 {
+  font-size: var(--size-h4);
+}
+
+.deep-learning-content {
+  padding: 50px 0 300px 40%;
+}
+
+.nutual-network {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(.5);
+  transform-origin: left center;
+}
+
+.save-time-sectoin-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .clock {
+    margin-left: 5rem;
+  }
+}
+
+.possibility-section {
+  position: relative;
+  padding: 230px 0 300px;
+  margin-bottom: 100px;
+}
+
+.possibility-section-content {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+}
+
+.gradient-background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.button-container {
+  text-align: right;
+}
