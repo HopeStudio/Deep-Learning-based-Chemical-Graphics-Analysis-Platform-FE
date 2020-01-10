@@ -1,0 +1,43 @@
+
+.container {
+  position: relative;
+}
+
+.main-section,
+.deep-learning-section {
+  position: relative;
+}
+
+.main-section {
+  padding: 150px 0 250px;
+}
+
+.description {
+  font-size: var(--size-h4);
+  color: var(--color-gray);
+}
+
+.ir-data {
+  position: absolute;
+  right: 0;
+  // top: -130px;
+  top: 0;
+  z-index: -1;
+}
+
+.triangle-top {
+  position: absolute;
+  right: 40%;
+  top: 20%;
+  animation: rotate infinite 10s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
