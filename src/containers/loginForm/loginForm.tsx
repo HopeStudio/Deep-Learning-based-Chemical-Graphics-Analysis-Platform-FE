@@ -31,7 +31,7 @@ const LoginForm: React.FC = () => {
     const data = await api.login({
       openId: userName,
       password,
-      isRememberPassword,
+      remember: isRememberPassword,
     })
     if (data.code !== 0) {
       createMessage(data.message)

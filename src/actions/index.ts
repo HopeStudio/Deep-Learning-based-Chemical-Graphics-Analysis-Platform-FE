@@ -1,10 +1,11 @@
 import { useMemo } from 'react'
 import { useDispatch } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { login } from './login'
+import { login, logout } from './login'
 
 export {
   login,
+  logout,
   useActions,
 }
 

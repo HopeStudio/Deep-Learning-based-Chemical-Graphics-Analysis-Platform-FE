@@ -7,9 +7,10 @@ export interface ResponseDataBaseType<T = object> {
 export interface LoginDataType {
   openId: string,
   password: string,
-  isRememberPassword?: boolean
+  remember?: boolean
 }
 
 export interface ResponseLoginDataType {
-  accessToken: string
+  accessToken: string,
+  remember: boolean,
 }

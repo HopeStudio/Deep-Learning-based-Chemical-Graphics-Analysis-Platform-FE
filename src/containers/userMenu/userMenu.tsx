@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import useActions, * as Actions from '../../actions'
 import { Divider } from '../../components'
 import Classes from './userMenu.module.scss'
 
 const UserMenu: React.FC = props => {
+  const logout = useActions<typeof Actions.logout>(Actions.logout)
+
   return (
     <ul className={Classes.container}>
       <li>signed in as everbrez</li>
@@ -25,7 +28,7 @@ const UserMenu: React.FC = props => {
       </li>
 
       <li>
-        <Link to="/logout">Logout</Link>
+        <Link to="" onClick={logout}>Logout</Link>
       </li>
 
     </ul>
