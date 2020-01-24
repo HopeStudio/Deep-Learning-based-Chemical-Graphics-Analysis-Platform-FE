@@ -17,9 +17,12 @@
   transition: border-color cubic-bezier(0.645, 0.045, 0.355, 1) .3s,
     box-shadow cubic-bezier(0.645, 0.045, 0.355, 1) .3s;
 
+  --color-shadow: var(--color-sub);
+  --color-border-hover: var(--color-sub);
+
   &:hover,
   &:focus {
-    border-color: var(--color-sub);
+    border-color: var(--color-border-hover);
   }
 
   &[disabled] {
@@ -28,7 +31,7 @@
   }
 
   &:focus {
-    box-shadow: var(--color-sub) 0 0 10px -4px;
+    box-shadow: var(--color-shadow) 0 0 10px -4px;
   }
 
   &.auto {
@@ -43,5 +46,11 @@
   &.large {
     width: 320px;
     height: 2.2rem;
+  }
+
+  &.error {
+    --color-shadow: var(--color-danger);
+    --color-border: var(--color-danger);
+    --color-border-hover: var(--color-danger);
   }
 }

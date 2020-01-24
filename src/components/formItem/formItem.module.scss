@@ -25,6 +25,7 @@
 .item {
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
 
   .space-between & {
     justify-content: space-between;
@@ -55,5 +56,23 @@
     width: 30%;
     text-align: right;
     padding: 0 .5rem 0;
+  }
+}
+
+.message {
+  --message-color: --color-sub;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  font-size: var(--size-small);
+  color: var(--message-color);
+
+  margin-left: 1em;
+  transform: translateY(-50%);
+
+  white-space: nowrap;
+
+  .error & {
+    --message-color: var(--color-danger);
   }
 }

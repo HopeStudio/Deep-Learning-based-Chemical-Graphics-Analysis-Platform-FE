@@ -7,6 +7,7 @@ export type InputProps = Omit<React.ComponentPropsWithRef<'input'>, 'type' | 'si
   height?: number,
   type?: 'text' | 'password',
   size?: 'normal' | 'auto' | 'large',
+  error?: boolean,
 }
 
 const Input: React.FC<InputProps> = props => {
@@ -17,6 +18,7 @@ const Input: React.FC<InputProps> = props => {
     width,
     height,
     size = 'auto',
+    error = false,
     ...rest
   } = props
 
@@ -28,6 +30,9 @@ const Input: React.FC<InputProps> = props => {
   const className = classnames(
     Classes.input,
     Classes[size],
+    {
+      [Classes.error]: error,
+    },
     injectClassName)
 
   return (

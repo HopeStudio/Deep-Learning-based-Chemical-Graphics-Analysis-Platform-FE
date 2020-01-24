@@ -7,6 +7,8 @@ export type FormItemProps = React.ComponentPropsWithRef<'div'> & {
   position?: 'top' | 'left',
   align?: 'space-between' | 'start' | 'end',
   space?: 'normal' | 'large',
+  message?: string,
+  error?: string,
 }
 
 const FormItem: React.FC<FormItemProps> = props => {
@@ -17,6 +19,8 @@ const FormItem: React.FC<FormItemProps> = props => {
     className: injectClassName,
     align = 'space-between',
     space = 'normal',
+    message,
+    error,
     ...rest } = props
 
   const className = classnames(
@@ -24,13 +28,19 @@ const FormItem: React.FC<FormItemProps> = props => {
     Classes[position],
     Classes[align],
     Classes['space-' + space],
-    { [Classes['with-label']]: label },
+    {
+      [Classes['with-label']]: label,
+      [Classes.error]: error,
+    },
     injectClassName)
 
   return (
     <div className={className} {...rest}>
       <div className={Classes.label}>{label}</div>
-      <div className={Classes.item}>{children}</div>
+      <div className={Classes.item}>
+        {children}
+        {error || message ? <span className={Classes.message}>{error || message}</span> : null}
+      </div>
     </div>
   )
 }

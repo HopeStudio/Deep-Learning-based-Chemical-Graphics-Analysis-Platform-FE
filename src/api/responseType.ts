@@ -14,3 +14,16 @@ export interface ResponseLoginDataType {
   accessToken: string,
   remember: boolean,
 }
+
+export interface CheckUserNameType {
+  uname: string
+}
+
+export interface CheckEmailType {
+  email: string
+}
+
+export interface VerificationType {
+  authType: 'email'
+  authId: string
+}
