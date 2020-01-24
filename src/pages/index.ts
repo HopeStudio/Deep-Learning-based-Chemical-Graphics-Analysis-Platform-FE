@@ -8,6 +8,7 @@ import Setting from './setting/setting'
 import History from './history/history'
 import HomePage from './homepage/homepage'
 import Product from './product/product'
+import IR from './ir/ir'
 
 export {
   Login,
@@ -20,4 +21,5 @@ export {
   History,
   HomePage,
   Product,
+  IR,
 }

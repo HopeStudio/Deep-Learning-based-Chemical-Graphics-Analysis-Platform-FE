@@ -11,6 +11,7 @@ import {
   History,
   HomePage,
   Product,
+  IR,
 } from '../pages'
 import { Header, Footer } from '../containers'
 import './app.scss'
@@ -25,6 +26,10 @@ const App: React.FC = () => {
 
       <Route path="/products" exact>
         <Product />
+      </Route>
+
+      <Route path="/ir" exact>
+        <IR />
       </Route>
 
       <Route path="/login" exact>

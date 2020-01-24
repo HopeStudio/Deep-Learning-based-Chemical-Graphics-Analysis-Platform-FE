@@ -73,3 +73,7 @@
   box-shadow: none;
   cursor: not-allowed;
 }
+
+.no-event {
+  pointer-events: none;
+}

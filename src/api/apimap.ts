@@ -7,4 +7,5 @@ export default {
   verifyCode: '/verification/verify',
   register: '/user/register',
   deleteAccount: '/user/deleteaccount',
+  irAnalyse: '/ir/analyse',
 }

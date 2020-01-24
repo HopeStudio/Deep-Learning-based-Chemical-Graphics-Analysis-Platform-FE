@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Container } from '../../containers'
 import { Button } from '../../components'
 import Classes from './product.module.scss'
@@ -22,10 +23,12 @@ const Product: React.FC = props => {
           infomation from chemical graphics.
         </p>
 
-          <Button type="gradient" size="large">
-            Have a Try
-          </Button>
-          <Button type="normal" size="large">
+          <Link to="/ir">
+            <Button type="gradient" size="large">
+              Have a Try
+            </Button>
+          </Link>
+          <Button type="normal" size="large" className={Classes.button}>
             Learn More
           </Button>
 

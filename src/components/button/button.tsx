@@ -8,6 +8,7 @@ export type ButtonProps = Omit<React.ComponentProps<'button'>, 'type'> & {
   size?: 'large' | 'normal' | 'small' | 'auto' | 'medium'
   // disabled?: boolean
   outline?: boolean,
+  noEvent?: boolean,
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
@@ -19,6 +20,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     className: injectClass,
     disabled,
     outline = false,
+    noEvent = false,
     ...others
   } = props
 
@@ -28,6 +30,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     Classes['size-' + size],
     {
       [Classes['no-outline']]: !outline,
+      [Classes['no-event']]: !!noEvent,
     },
     injectClass)
 
