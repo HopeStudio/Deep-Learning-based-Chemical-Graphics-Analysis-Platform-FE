@@ -8,10 +8,14 @@ import nutualNetwork from '../../assets/images/nutual-network.webp'
 import triangle from '../../assets/images/triangle.webp'
 import clock from '../../assets/images/clock.svg'
 import gradientBackground from '../../assets/images/gradient-background.webp'
+import {Message, createMessage} from '../../components'
 
 const HomePage: React.FC = props => {
+  createMessage({children: '234235435435435'})
   return (
     <div className={Classes.container}>
+      {/* <Message>Message</Message> */}
+      {/* <Message><Button>Message12</Button></Message> */}
 
       <section className={Classes['main-section']}>
         <Container>

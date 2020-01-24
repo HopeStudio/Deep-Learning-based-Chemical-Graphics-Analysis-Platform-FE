@@ -7,6 +7,7 @@ import Title from './title/title'
 import FormItem from './formItem/formItem'
 import Avatar from './avatar/avatar'
 import DropDown from './dropDown/dropDown'
+import Message, { createMessage } from './message/message'
 
 export {
   Button,
@@ -18,4 +19,6 @@ export {
   FormItem,
   Avatar,
   DropDown,
+  Message,
+  createMessage,
 }
