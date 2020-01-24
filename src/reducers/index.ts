@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import plusone from './plusone'
+import login from './login'
 
-const reducers = { plus: plusone }
+const reducers = { login }
 
 export default combineReducers(reducers)

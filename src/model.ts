@@ -1,5 +1,7 @@
 export enum ActionTypes {
   PLUS_ONE,
+  LOGIN,
+  LOGOUT,
 }
 
 export interface Action<T> {
@@ -8,5 +10,6 @@ export interface Action<T> {
 }
 
 export interface State {
-  plus: number
+  plus: number,
+  login: string
 }

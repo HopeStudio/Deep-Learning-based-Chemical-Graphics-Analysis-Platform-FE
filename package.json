@@ -108,5 +108,6 @@
         }
       ]
     }
-  }
+  },
+  "proxy": "http://localhost:7001"
 }

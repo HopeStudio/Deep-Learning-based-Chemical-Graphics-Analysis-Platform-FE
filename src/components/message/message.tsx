@@ -34,11 +34,10 @@ const Message: React.FC = props => {
   return ReactDOM.createPortal(message, getMessageRootContainer())
 }
 
-export const createMessage = (options: {children: string | ReactElement}) => {
-  const { children } = options
+export const createMessage = (messageStr: string) => {
   const message = (
     <div className={Classes['item-wrapper']}>
-      <div className={Classes.item}>{children}</div>
+      <div className={Classes.item}>{messageStr}</div>
     </div>
   )
 

@@ -1,8 +1,14 @@
 import { useMemo } from 'react'
 import { useDispatch } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { login } from './login'
 
-export default function useActions<T>(actions: any, deps?: any): T {
+export {
+  login,
+  useActions,
+}
+
+function useActions<T>(actions: any, deps?: any): T {
   const dispatch = useDispatch()
   return useMemo(
     () => {
@@ -14,3 +20,5 @@ export default function useActions<T>(actions: any, deps?: any): T {
     deps ? [dispatch, ...deps] : deps,
   )
 }
+
+export default useActions

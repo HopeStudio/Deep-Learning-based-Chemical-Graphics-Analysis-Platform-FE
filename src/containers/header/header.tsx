@@ -1,8 +1,8 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector } from '../../selectors'
+import useActions, * as Actions from '../../actions'
 import { Link } from 'react-router-dom'
 import classnames from 'classnames'
-import useActions from '../../actions'
 import { State } from '../../model'
 import * as plusone from '../../actions/plusone'
 import { Button, Logo, Avatar, DropDown } from '../../components'
@@ -11,6 +11,8 @@ import Classes from './header.module.scss'
 import { ReactComponent as SearchIcon } from '../../assets/images/search-icon.svg'
 
 const Header: React.FC = () => {
+  const isLogin = useSelector<string>(state => state.login)
+
   return (
     <Container type="flex">
       <header className={Classes.container}>
@@ -32,19 +34,26 @@ const Header: React.FC = () => {
           <Link to="/search" title="search" className={Classes.search}>
             <SearchIcon className={Classes['search-icon']} />
           </Link>
-          {/* <Link to="/login" className={Classes.login}>Login</Link>
-          <Link to="/register" className="no-hover">
-            <Button
-              type="gradient"
-              size="normal">
-              Register
-            </Button>
-          </Link> */}
-          <DropDown dropDown={<UserMenu />}>
-            <Link to="/profile" className={Classes.avatar}>
-              <Avatar />
-            </Link>
-          </DropDown>
+          {
+            isLogin
+            ?
+              <DropDown dropDown={<UserMenu />}>
+                <Link to="/profile" className={Classes.avatar}>
+                  <Avatar />
+                </Link>
+              </DropDown>
+            : <>
+                <Link to="/login" className={Classes.login}>Login</Link>
+                <Link to="/register" className="no-hover">
+                  <Button
+                    type="gradient"
+                    size="normal">
+                    Register
+                  </Button>
+                </Link>
+              </>
+          }
+
         </div>
 
       </header>
